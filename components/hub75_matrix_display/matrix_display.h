@@ -225,6 +225,13 @@ namespace esphome
             {
                 return brightness_values_;
             }
+            /**
+             * Gets the matrix display object
+             */
+            MatrixPanel_I2S_DMA *get_dma_display()
+            {
+                return dma_display_;
+            }
 
         protected:
             /// @brief Wrapped matrix display
