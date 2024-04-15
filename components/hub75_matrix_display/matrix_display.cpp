@@ -35,7 +35,7 @@ namespace esphome
             // The min refresh rate correlates with the update frequency of the component
             mxconfig.min_refresh_rate = 1000 / update_interval_;
 
-            mxconfig.double_buff = true;
+            mxconfig.double_buff = false;
 
             // Display Setup
             dma_display_ = new MatrixPanel_I2S_DMA(mxconfig);
